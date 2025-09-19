@@ -1,0 +1,147 @@
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ffe0f7 0%, #ffd6e0 100%);
+    margin: 0;
+    color: #a14a7c;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 1rem 1rem 1rem;
+    background: #fff0fa;
+    border-bottom: 2px solid #f9b6d2;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #e75480;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.menu a:hover {
+    background: #ffe0f7;
+    color: #a14a7c;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0.5rem 0 0.2rem 0;
+    color: #e75480;
+    letter-spacing: 2px;
+}
+
+.frase {
+    font-style: italic;
+    color: #b86b9f;
+    margin-bottom: 1rem;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    background: #fff8fc;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px #f9b6d2aa;
+    padding: 2rem 1.5rem;
+}
+
+.galeria h2, .poemas h2 {
+    color: #e75480;
+    margin-bottom: 1rem;
+}
+
+.fotos-grid {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.fotos-grid img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 3px solid #f9b6d2;
+    box-shadow: 0 2px 12px #f9b6d288;
+    background: #fff;
+    transition: transform 0.2s;
+}
+
+.fotos-grid img:hover {
+    transform: scale(1.07) rotate(-2deg);
+    border-color: #e75480;
+}
+
+.poema {
+    background: #ffe0f7;
+    border-left: 5px solid #e75480;
+    margin: 1.2rem 0;
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    color: #a14a7c;
+    box-shadow: 0 2px 8px #f9b6d244;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem 0 1rem 0;
+    color: #b86b9f;
+    font-size: 1rem;
+    background: transparent;
+}
+.footer-cute {
+    text-align: center;
+    padding: 1.7rem 0 1.2rem 0;
+    color: #b86b9f;
+    font-size: 1.08rem;
+    background: transparent;
+    position: relative;
+}
+.footer-heart {
+    color: #e75480;
+    font-size: 1.2em;
+}
+.footer-deco {
+    font-size: 1.5em;
+    color: #ffd6e0;
+    margin-top: 0.5em;
+    letter-spacing: 0.3em;
+    user-select: none;
+}
+/* Detalles decorativos extra cute */
+header::after {
+    content: '✿';
+    position: absolute;
+    top: 1.2em;
+    right: 2.5em;
+    font-size: 2.5em;
+    color: #ffd6e0;
+    opacity: 0.7;
+    pointer-events: none;
+}
+main::before {
+    content: '✧';
+    position: absolute;
+    left: -1.2em;
+    top: 1.5em;
+    font-size: 2.2em;
+    color: #ffd6e0;
+    opacity: 0.5;
+    pointer-events: none;
+}
